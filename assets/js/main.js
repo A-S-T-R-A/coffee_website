@@ -1,3 +1,10 @@
+const downBtn = document.getElementById("getStartedBtn");
+
+function topFunction() {
+  document.body.scrollTop = 10000;
+  document.documentElement.scrollTop = 10000;
+}
+downBtn.addEventListener("click", topFunction);
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 const scrollHeader = () => {
@@ -17,6 +24,7 @@ const scrollUp = () => {
     : scrollUp.classList.remove("show-scroll");
 };
 window.addEventListener("scroll", scrollUp);
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
 
